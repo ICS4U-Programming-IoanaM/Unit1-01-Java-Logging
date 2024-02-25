@@ -35,17 +35,20 @@ public final class Logging {
       // checks if user entered one of the three options given to the user
       if (logSize != 0.25 && logSize != 0.5 && logSize != 1) {
         // user did not enter the correct input
-        System.out.println("Invalid input, please enter one of the three options.");
+        System.out.println("Invalid input, please" +
+        " enter one of the three options.");
       } else {
         // calculates how many logs the truck can hold
         int logsOnTruck = (int) (1100 / (20 * logSize));
         // displays the amount of logs the truck can hold
-        System.out.println("You can load " + logsOnTruck + " logs on the truck.");
+        System.out.println("You can load " +
+        logsOnTruck + " logs on the truck.");
       }
 
       // user did not enter in a float input
     } catch (InputMismatchException error) {
-      System.out.println("Invalid input, please enter one of the three options.");
+      System.out.println("Invalid input, please enter" +
+      " one of the three options.");
     }
 
     // closes scanner
